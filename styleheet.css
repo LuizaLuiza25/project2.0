@@ -1,0 +1,346 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(238, 130, 238);
+background-image: url(./images/ian-dooley-DuBNA1QMpPA-unsplash.jpg);
+
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Josefin Slab', serif; 
+}
+
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+    font-size: 1rem;
+
+}
+
+a:hover{
+    color:rgb(241, 237, 245);
+}
+
+/*HEADER here: */
+
+header{
+    position: relative;
+    padding: 0 2rem;
+
+}
+
+.inv{
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: scale .2s ease;
+}
+
+.navbar .logo a:hover{
+    scale: 1.05;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    transition: scale .2s ease;
+    font-weight: bold;
+}
+
+.navbar .links:hover{
+    scale: 1.05;
+}
+
+.navbar .links:active{
+    scale:0.95;
+}
+
+
+/*styling the hamburger menu: */
+.navbar .toggle_btn{
+    color: rgb(26, 4, 46);
+    font-size: 1.5rem;
+    cursor: pointer; /*change the mouse cursor when hovering on a link */
+    display: none;
+}
+
+
+
+
+
+/*make the menu links bigger when hovering: */
+
+
+.action_btn:hover{
+    scale: 1.05;
+    color:rgb(245, 245, 220);
+
+}
+
+.action_btn:active{
+    scale:0.95;
+}
+
+
+/*dropdown menu here: */
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: rgba(0, 0, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-weight: bold;
+}
+
+
+
+.dropdown_menu.open{
+    height: 120px;
+
+}
+
+.dropdown_menu li{
+padding: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.dropdown_menu .action_btn{
+width: 100%;
+display: flex;
+justify-content: center;
+
+}
+
+
+/*BANNER MAIN SECTION */
+section#banner{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column; /* for setting how flex items are being placed inside the flex container, defining the main axis */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     color:rgb(255, 251, 251); 
+    /* color:rgb(12, 1, 1); */
+
+}
+
+
+
+.purple{
+    background-color: rgba(138, 43, 226, 0.7);
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+
+
+#banner h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: lighter;
+    
+}
+
+#banner .Anna{
+    font-size: 1.6rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+    
+}
+
+#banner .author{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.theimages{
+    margin: auto;
+    padding: 1.2rem;
+}
+
+.allarticles{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: rgb(32, 30, 30);
+}
+
+.Titles{
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1rem;
+}
+
+
+
+.foot{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.8rem;
+    background-color: rgba(199, 190, 207, 0.5);
+    
+}
+
+.foot .copyright {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: bolder;
+    margin-top: 7px;
+}
+
+
+.foot .copyright .copysign {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    
+    
+    
+}
+
+
+
+/*RESPONSIVE DESIGN HERE */
+
+
+/*FIRST MEDIA QUERY - trigers style for a smaller screen, when the viewport of the device is less than 992px:*/
+
+@media only screen and (max-width: 992px){
+
+
+.navbar .links{
+    display: none;
+}
+.navbar .action_btn{
+    display: none;
+}
+
+.navbar .toggle_btn{
+    display:block;
+}
+
+
+.dropdown_menu {
+    display: block;
+}
+
+
+
+
+}
+
+
+/*SECOND MEDIA QUERY:*/
+
+@media screen and (max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+/* ADD MEDIA QUERY FOR preferes-reduced motion media query: */
+  
+@media screen and (prefers-reduced-motion: reduce) {
+    body {
+      scroll-behavior: smooth;
+    
+    }
+  
+    }
+  
+    /*create a media query for dark colors: change background to a dark color, change font color to a lighter color, change the border of the figures to black*/
+  
+    @media (prefers-color-scheme: dark) {
+  
+      .container {
+  
+        background-color: rgb(0, 0, 139);
+        color: rgb(255, 255, 224);
+        border-color: rgb(0, 0, 0);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

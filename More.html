@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--font awesome here:-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+        <!--linked to Css here:-->
+    <link rel="stylesheet" href="./secondstylesheet.css">
+
+    <!--font for everything:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+            <!--font only for the quote-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+        <title>Bookaveler</title>
+        </head>
+        <body>
+
+            <div id="content">
+                <div id="top"></div>
+                <header>
+                  <h1 class="inv">BOOKTRAVELER</h1>
+                    <div class="navbar">
+                        <div class="logo"><a href="index.html">Home</a></div>
+                        <ul class="links">
+                          <li><a href="About.html">About</a></li>
+                          <li><a href="Travelandbooks.html">Travel&Books</a></li>
+                          <li><a href="More.html">More</a></li>
+                      </ul>
+                        
+                        <div class="toggle_btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                
+                    <div class="dropdown_menu">
+                      <ul class="links">
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Travelandbooks.html">Travel&Books</a></li>
+                        <li><a href="Travelandbooks.html">More</a></li>
+                    </ul>
+                    </div>
+                    <hr class="line">
+                </header>
+        
+                <main class="container">
+                    <!--FIRST ARTICLE-->
+                    
+                                    <article class="allarticles">
+                                        <h3 class="Titles">..in conclusion</h3>
+                                        <p>For when you cannot travel, for when you need escaping a cold winter day or a rainy autumn evening, books are the perfect way to do so. 
+                                            <br>
+                                            I still remember my first book that I got at the age of nine years old: a collection of old oriental stories, taken from Persian folklore. But mostly, I remember how these storie made me travel through time and space, discovering just how wonderful and fascinanting this world is. Thinking of it, I believe this was my first travelling  book. <br>
+                                            Do you have any favourite traveling books? What are they?</p>
+                                    </article>
+                    
+                                    
+                    
+                                    <!--FIRST IMAGE-->
+                    
+                                    <div class="theimages">
+                                        <figure class="fourimages">
+                                            <img src="./images/chuttersnap-Zf64Osndqvc-unsplash.jpg" alt="random books unsplash.com" width="400">
+                                            <figcaption class="figdescription">What are your favourite travelling books?</figcaption>
+                                        </figure>
+                                    </div>
+                     
+                     
+                
+
+                    <!--INSERT A FORM HERE-->
+                    <div class="addons">
+                        <h3 class="Titles">Any suggestions?</h3>
+                        <p>I am always looking for new books to read. What books remind you of a city, a place or a country? Let me know!</p>
+                        <br><br>
+                        <div class="forms">
+                            <form action="/action_page.php">
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="fname">First Name</label>
+                              </div>
+                              <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="lname">Last Name</label>
+                              </div>
+                              <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="country">Continent</label>
+                              </div>
+                              <div class="col-75">
+                                <select id="country" name="country">
+                                    <option value="none">...</option>
+                                  <option value="northamerica">North America</option>
+                                  <option value="southamerica">South America</option>
+                                  <option value="europe">Europe</option>
+                                  <option value="asia">Asia</option>
+                                  <option value="africa">Africa</option>
+                                  <option value="oceania">Oceania</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-25">
+                                <label for="subject">Subject</label>
+                              </div>
+                              <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <input type="submit" value="Submit">
+                            </div>
+                            </form>
+                          </div>
+                        
+                        </div>
+
+                        <div class="googlecalendar">
+                            <h3 class="planreading">Plan your reading!</h3>
+                        
+                    <iframe id="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FBucharest&bgcolor=%239E69AF&showTz=0&showPrint=0&src=ODdjZTBmOThiMjE1NWVhNzdiYjc1NGRlMThkMGFiZDE0ZjIyM2FmOTYwNjRlOTA1Nzk5ZDhhYzlkZjM3MzhlNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB"></iframe>
+
+                    
+                </div>
+                         
+                   <div class="top"> <a href="#top" class="top">UP</a> </div>
+                                </main>
+                    
+                            </div>
+                    <footer class="foot">
+                        <p class="copyright">Booktraveler 2024 <span class="copysign">&copy;</span> </p>
+                            </footer>
+           
+        
+
+
+            <script src="./javascript.js"></script>
+        </body>
+        </html>
